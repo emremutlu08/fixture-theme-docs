@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fixture theme documentation</title>
+<meta name="description" content="Documentation for the Fixture Shopify theme: setup, theme settings, sections, product pages, cart, customer accounts, FAQ and support policy.">
+<style>
+:root{color-scheme:light dark;--text:#171918;--muted:#5b5f5c;--bg:#f8f8f5;--line:#d9dad5;--link:#1f6f69}
+@media (prefers-color-scheme:dark){:root{--text:#ecedea;--muted:#a9ada9;--bg:#151716;--line:#2f3330;--link:#6fc2ba}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+main{max-width:860px;margin:0 auto;padding:48px 20px 80px}
+header.doc-head{border-bottom:1px solid var(--line);margin-bottom:32px;padding-bottom:16px}
+header.doc-head p{color:var(--muted);margin:4px 0 0}
+h1{font-size:2.2rem;line-height:1.15;margin:0}h2{font-size:1.5rem;margin-top:48px;padding-top:8px;border-top:1px solid var(--line)}h3{font-size:1.15rem;margin-top:28px}
+a{color:var(--link)}code{font-size:.9em;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:.95rem;display:block;overflow-x:auto}th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}th{background:rgba(127,127,127,.08)}
+li{margin:4px 0}
+</style>
+</head>
+<body>
+<main>
+<header class="doc-head"><h1>Fixture theme documentation</h1><p>Shopify theme by Emre Mutlu, Digimaps Core. Support: <a href="https://digimaps.co/en#contact">digimaps.co/en#contact</a></p></header>
+<p>Fixture is a Shopify theme for sports and teamwear stores. It covers the usual
+storefront, and adds a jersey customizer for stores that sell personalized kit.</p>
+<p>This document uses the same wording as the theme editor, so a heading here
+matches the label you see in Shopify admin.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#install-the-theme">Install the theme</a></li>
+<li><a href="#theme-settings">Theme settings</a></li>
+<li><a href="#header-and-footer">Header and footer</a></li>
+<li><a href="#home-page">Home page</a></li>
+<li><a href="#product-pages">Product pages</a></li>
+<li><a href="#collection-and-search">Collection and search</a></li>
+<li><a href="#cart">Cart</a></li>
+<li><a href="#jersey-customizer">Jersey customizer</a></li>
+<li><a href="#content-pages">Content pages</a></li>
+<li><a href="#customer-accounts">Customer accounts</a></li>
+<li><a href="#frequently-asked-questions">Frequently asked questions</a></li>
+<li><a href="#editing-theme-code">Editing theme code</a></li>
+<li><a href="#contact-form-limits">Contact form limits</a></li>
+<li><a href="#support-policy">Support policy</a></li>
+</ul>
+<h2 id="install-the-theme">Install the theme</h2>
+<ol>
+<li>In Shopify admin, go to <strong>Online Store &gt; Themes</strong>.</li>
+<li>Under <strong>Theme library</strong>, choose <strong>Add theme &gt; Upload zip file</strong> and select the
+Fixture zip.</li>
+<li>Choose <strong>Customize</strong> to open the theme editor.</li>
+<li>Choose <strong>Publish</strong> when you are ready for the theme to go live.</li>
+</ol>
+<p>Fixture works without custom metafields; the Product details section can read an
+optional product metafield custom.key_features. It needs no paid apps. Collection
+and search filters come from Shopify&#39;s free Search and Discovery app. Every setting lives
+in the theme editor. The theme reads only the product, collection, page, blog
+and navigation data you already have.</p>
+<h2 id="theme-settings">Theme settings</h2>
+<p>Open the theme editor and choose the settings icon at the bottom of the left
+panel. Settings are grouped as follows.</p>
+<h3>Layout</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Page width</td>
+<td>Maximum content width, in pixels</td>
+</tr>
+<tr>
+<td>Grid horizontal gap</td>
+<td>Space between grid columns</td>
+</tr>
+<tr>
+<td>Grid vertical gap</td>
+<td>Space between grid rows</td>
+</tr>
+</tbody></table>
+<h3>Color mode</h3>
+<p><strong>Enable light and dark mode</strong> lets visitors switch between light and dark
+appearance. <strong>Default appearance</strong> sets the starting mode, with the values
+Light, Dark and Use device setting. <strong>Dark background</strong>, <strong>Dark surface</strong>,
+<strong>Dark text</strong> and <strong>Dark accent</strong> set the colors used in dark mode.</p>
+<h3>Breadcrumbs</h3>
+<p><strong>Show breadcrumbs on pages and collections</strong> turns the breadcrumb trail on for
+those pages. Product pages have their own breadcrumb setting in the
+<strong>Product information</strong> section.</p>
+<h3>Colors</h3>
+<p>Fixture uses six color settings: <strong>Text</strong>, <strong>Background</strong>, <strong>Secondary background</strong>,
+<strong>Accent</strong>, <strong>Highlight</strong> and <strong>Solid button label</strong>.</p>
+<p>Every background has a matching foreground, so text stays readable when you
+change a background. Sections also offer a <strong>Color palette</strong> setting with the
+values Light, Soft, Dark, Accent and Brand colors. Choosing <strong>Brand colors</strong>
+makes a section use the background and text you set here.</p>
+<h3>Typography</h3>
+<p><strong>Heading font</strong> and <strong>Body font</strong> each take a Shopify font. <strong>Heading size</strong>
+and <strong>Body size</strong> set the type without you editing each section.
+<strong>Additional body text scaling</strong> adjusts body text as a percentage, with 100%
+as the default. Bold, italic and bold italic weights load automatically for the
+fonts you pick.</p>
+<h3>Shapes</h3>
+<p><strong>Global corner radius</strong> sets one radius for theme components. Turn on
+<strong>Apply global radius</strong> to use it. <strong>Button corner radius</strong>, <strong>Input corner radius</strong>,
+<strong>Card corner radius</strong>, <strong>Media corner radius</strong> and <strong>Badge corner radius</strong> control
+each component, plus <strong>Button border thickness</strong>. Set these once and every
+section follows. Product and section settings with their own radius keep
+precedence.</p>
+<h3>Product media and cards</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Product media background</td>
+<td>The background behind product images: Gray, White, Ivory or Custom color</td>
+</tr>
+<tr>
+<td>Custom product media color</td>
+<td>The background color used when <strong>Product media background</strong> is Custom color</td>
+</tr>
+<tr>
+<td>Product media corner radius</td>
+<td>The corner radius of product images</td>
+</tr>
+<tr>
+<td>Product image fit</td>
+<td>Contain or Cover, how a product image fills its frame</td>
+</tr>
+<tr>
+<td>Blend product images into their background</td>
+<td>Uses multiply blending so product images sit in their background</td>
+</tr>
+<tr>
+<td>Card color options</td>
+<td>How color options show on product cards: Color swatches, Image thumbnails or None</td>
+</tr>
+<tr>
+<td>Color option action</td>
+<td><strong>Preview on card</strong> changes the card image, <strong>Open product</strong> opens the product</td>
+</tr>
+<tr>
+<td>Quick view button</td>
+<td>Shows the quick view button as Icon or as Icon and text</td>
+</tr>
+</tbody></table>
+<h3>Product cards</h3>
+<p><strong>Show the &quot;New&quot; badge</strong>, <strong>Show the &quot;Popular&quot; badge</strong> and <strong>Show the &quot;Best seller&quot; badge</strong>
+appear on products tagged new, popular and best-seller. <strong>Show sale badges</strong>
+controls sale badges on every product card. <strong>Sale badge format</strong>
+(Percentage, Amount or Sale label) and <strong>Sale badge indicator</strong> (Icon or Text)
+set how a sale badge reads. <strong>Sale badge background</strong>, <strong>Sale badge text</strong> and
+<strong>Sale badge border</strong> set its colors. Leave a color empty to use Highlight for
+the background and border, or the contrast color for the text.</p>
+<h3>Cart</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Cart type</td>
+<td><strong>Drawer</strong> opens a side cart, <strong>Page</strong> goes to the cart page</td>
+</tr>
+<tr>
+<td>Show cart note</td>
+<td>Lets a customer add a note with the order</td>
+</tr>
+<tr>
+<td>Show free shipping progress</td>
+<td>Shows progress toward a free shipping threshold</td>
+</tr>
+<tr>
+<td>Free shipping threshold</td>
+<td>The order total that earns free shipping</td>
+</tr>
+<tr>
+<td>Show continue shopping link</td>
+<td>Adds a link that returns the customer to shopping</td>
+</tr>
+<tr>
+<td>Continue shopping collection</td>
+<td>The collection the continue shopping link opens</td>
+</tr>
+</tbody></table>
+<h3>Cart recommendations</h3>
+<p><strong>Show cart recommendations</strong> turns this on. <strong>Product source</strong> chooses where
+the products come from, with the values <strong>Selected products</strong>, <strong>Collection</strong>,
+<strong>Shopify complementary products</strong> and <strong>Selected + Shopify complementary</strong>.
+The rest control the <strong>Heading</strong>, the <strong>Desktop layout</strong> and <strong>Mobile layout</strong>
+(Stacked cards or Horizontal slider), the <strong>Product photo size</strong> (Compact,
+Balanced or Large) and the <strong>Option spacing</strong> (Compact or Comfortable).</p>
+<h3>Home page motion</h3>
+<p><strong>Motion style</strong> sets how much motion the home page uses: Off, Subtle or
+Expressive. The default is Subtle. <strong>Reveal sections on scroll</strong> reveals each
+section as a visitor scrolls to it. <strong>Use reveal motion on mobile</strong> turns that
+reveal on for phones as well.</p>
+<h3>Search</h3>
+<p><strong>Enable search suggestions</strong> shows suggestions as a customer types.
+<strong>Show price in suggestions</strong> adds a price to each suggestion.</p>
+<h3>Social media</h3>
+<p>Links for Instagram, Facebook, TikTok, YouTube and Pinterest. Leave a field
+empty to hide that icon.</p>
+<h3>Brand</h3>
+<p><strong>Favicon</strong> and a <strong>Default meta description</strong> used
+where a page has none.</p>
+<h3>Product recommendations</h3>
+<p><strong>Hide jersey customizer products</strong> keeps those products out of
+recommendations, which is useful when they are not meant to be bought
+directly. <strong>Excluded collection</strong> removes everything in a collection from
+recommendations.</p>
+<p><strong>Settings density.</strong> The hero, video, countdown, header, campaign showcase and
+jersey sections expose 45 to 55 settings each by design, so the editor shows long
+lists for them. Theme Check reports four <code>ExcessiveSettingsCount</code> warnings for
+these sections. The warnings are accepted and do not block the theme.</p>
+<h2 id="header-and-footer">Header and footer</h2>
+<p>The header and footer are section groups, so you edit them in the theme editor
+like any other section and they apply to every page.</p>
+<p>The <strong>Header</strong> section covers the layout (logo left, logo centered, or a drawer
+menu), sticky behavior, the menus, the search field, the country and language
+selectors, and the account link. Use nested menus in Shopify admin under Online Store &gt; Navigation to get
+multi-level dropdowns.</p>
+<p>The <strong>Footer</strong> section covers menus, the newsletter, payment icons, social
+icons and the copyright line.</p>
+<p>The <strong>Announcement bar</strong> sits above the header and takes multiple messages as
+blocks.</p>
+<p>The <strong>Welcome popup</strong> lives in the footer group. <strong>Open trigger</strong> defaults to
+<strong>After delay</strong>. Choose <strong>After browsing interaction</strong> to wait for both the
+configured minimum delay and a completed click, tap, key release or mouse-wheel
+scroll outside links and controls. Form entry and purchases do not trigger it.
+Without browsing interaction, the popup stays closed. The home-page and repeat
+settings control where and how often a visitor sees it.</p>
+<h2 id="home-page">Home page</h2>
+<p>Add sections from <strong>Add section</strong> in the theme editor. The ones intended for
+the home page are:</p>
+<p><strong>Hero</strong>, <strong>Media collections</strong>, <strong>Collection tabs</strong>, <strong>Campaign showcase</strong>,
+<strong>Collection cards</strong>, <strong>Collection grid</strong>, <strong>Product rail</strong>, <strong>Featured
+products</strong>, <strong>Featured product</strong>, <strong>Bundle builder</strong>, <strong>Product kit</strong>,
+<strong>Hotspots</strong>, <strong>Lifestyle showcase</strong>, <strong>Video</strong>, <strong>Image comparison</strong>,
+<strong>Countdown timer</strong>, <strong>Blog posts</strong>, <strong>Logo list</strong>, <strong>Icon benefits</strong>,
+<strong>Quote</strong>, <strong>FAQ</strong>, <strong>Email signup</strong>, <strong>Product comparison</strong> and <strong>Custom
+Liquid</strong>.</p>
+<p>Further storytelling and layout sections: <strong>Category grid</strong>, <strong>Product set</strong>,
+<strong>Statistics</strong>, <strong>Story grid</strong>, <strong>Principles</strong>, <strong>Feature strip</strong>, <strong>Page header</strong>,
+<strong>Before and after</strong>, <strong>Campaign pair</strong>, <strong>Empty state cards</strong>, <strong>Editorial page</strong>,
+<strong>Editorial article</strong>, <strong>Article listing</strong>, <strong>Contact details</strong>, <strong>Collection list</strong>
+and <strong>Product details</strong>.</p>
+<p>Each of these also works on a page template, so you can build landing pages
+from the same parts.</p>
+<h3>Bundle builder</h3>
+<p>The <strong>Bundle builder</strong> section sells a set of products for one discounted total.
+Set up the discount in Shopify first:</p>
+<ol>
+<li>In Shopify admin, go to <strong>Discounts</strong> and create a percentage discount code for
+the eligible products. Set the minimum quantity to the number in
+<strong>Products to choose</strong>.</li>
+<li>In the section settings, enter the same code in <strong>Shopify discount code</strong>.</li>
+<li>Match <strong>Products to choose</strong> and <strong>Displayed discount</strong> to that Shopify discount.</li>
+</ol>
+<p>Leave <strong>Shopify discount code</strong> empty to sell the selection without a discount.
+The section then shows no saving.</p>
+<h2 id="product-pages">Product pages</h2>
+<p>The <strong>Product information</strong> section is block driven. Add, remove and reorder
+these blocks:</p>
+<ul>
+<li><strong>Vendor</strong>, <strong>Product title</strong>, <strong>SKU</strong>, <strong>Price</strong>, <strong>Variant picker</strong>, <strong>Quantity selector</strong>, <strong>Buy buttons</strong>, <strong>Product description</strong></li>
+<li><strong>Product features</strong>, <strong>Complete the kit</strong>, <strong>Text note</strong>, <strong>Collapsible information</strong></li>
+<li><strong>Custom Liquid</strong>, and any app block</li>
+</ul>
+<p>The heading blocks (Vendor, Product title, SKU) render as one group, and the
+purchase blocks (Variant picker, Quantity selector, Buy buttons) render as one
+group. Each group appears at the position of its first block, and the order
+inside a group is fixed. The older <strong>Product options and purchase</strong> block still
+works. When it is present, the new purchase blocks are ignored. The legacy
+Show vendor and Show SKU settings of the Product title block still work, and
+each line renders once even when a Vendor or SKU block is also added.</p>
+<p>Key settings: media layout and position, gallery style, whether to show
+breadcrumbs, the sticky buy bar, and a size guide page. The size guide, gift
+card recipient, pickup availability and dynamic checkout settings are on the
+Buy buttons block.</p>
+<p><strong>Complete the kit</strong> has a <strong>Product source</strong> setting. <strong>Shopify
+complementary products</strong> uses Shopify&#39;s own recommendations, <strong>Collection</strong>
+draws from a collection you pick, <strong>Selected products</strong> uses a list you
+choose, and <strong>Selected + Shopify complementary</strong> combines the two.</p>
+<p>Variant images change the gallery when a customer selects a variant, so upload
+an image per color.</p>
+<h2 id="collection-and-search">Collection and search</h2>
+<p><strong>Collection page</strong> handles the product grid, sorting, pagination and
+filtering. Filters come from Shopify&#39;s <strong>Search and Discovery</strong> app settings, so
+add filters there and the theme shows them. Customers can filter by
+availability, price, product type, vendor and variant options.</p>
+<p><strong>Collection index</strong> lists every collection. <strong>Search results</strong> handles
+search, including products, pages and articles.</p>
+<h2 id="cart">Cart</h2>
+<p><strong>Cart</strong> works as a page or as a side drawer, set by <strong>Cart type</strong> in theme
+settings. It shows per item and per order discounts, selling plans,
+unit prices, order notes and accelerated checkout buttons.</p>
+<h2 id="jersey-customizer">Jersey customizer</h2>
+<p>This is Fixture&#39;s own feature, for stores selling personalized kit.</p>
+<ol>
+<li>Add the <strong>Jersey customizer</strong> section to a page or product template.</li>
+<li>Add a <strong>Jersey model</strong> block for each jersey style and choose its product.</li>
+<li>Set a front image and, if you have one, a back image on each block.</li>
+<li>Add <strong>Player</strong> blocks if you want a roster a customer can pick from.</li>
+<li>Set the print colors you offer with <strong>Print color</strong> blocks.</li>
+</ol>
+<p><strong>Printing pricing</strong> decides how personalization is charged.
+<strong>Paid printing, uses product variants</strong> uses a product option on the jersey
+product itself, which is the recommended setup, so create the option named in
+<strong>Product option name</strong> with the values you want to charge for.
+<strong>Printing included at no extra charge</strong> adds personalization at no cost.</p>
+<p>The name and number font settings control the print preview. Set the print
+area with the placement settings on each model block.</p>
+<h2 id="content-pages">Content pages</h2>
+<table>
+<thead>
+<tr>
+<th>Template</th>
+<th>Section</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Page</td>
+<td><strong>Page content</strong></td>
+</tr>
+<tr>
+<td>Contact</td>
+<td><strong>Contact form</strong></td>
+</tr>
+<tr>
+<td>Blog</td>
+<td><strong>Blog listing</strong></td>
+</tr>
+<tr>
+<td>Article</td>
+<td><strong>Blog article</strong></td>
+</tr>
+<tr>
+<td>Search</td>
+<td><strong>Search results</strong></td>
+</tr>
+<tr>
+<td>404</td>
+<td><strong>404 page</strong></td>
+</tr>
+<tr>
+<td>Password</td>
+<td><strong>Password page</strong></td>
+</tr>
+<tr>
+<td>Gift card</td>
+<td>Fixed layout, no settings</td>
+</tr>
+</tbody></table>
+<p><strong>Page content</strong> has a <strong>Layout</strong> setting with <strong>Reading width</strong>, <strong>Wide</strong> and
+<strong>Split</strong>. Use Reading width for long text.</p>
+<h2 id="customer-accounts">Customer accounts</h2>
+<p>Fixture supports both of Shopify&#39;s account systems. With classic accounts the
+theme renders the login, register, account, addresses, order and password
+reset pages. With new customer accounts Shopify hosts those pages and the
+theme shows the account link in the header.</p>
+<h2 id="frequently-asked-questions">Frequently asked questions</h2>
+<p><strong>Do I need any apps?</strong>
+No paid apps or custom metafields are needed. Collection and search filters
+come from Shopify&#39;s free Search and Discovery app.</p>
+<p><strong>Why are my collection filters missing?</strong>
+Filters come from Shopify&#39;s <strong>Search and Discovery</strong> app. Add filters there and
+they appear on collection and search pages.</p>
+<p><strong>Why does the jersey customizer show no models?</strong>
+Each <strong>Jersey model</strong> block needs a product selected. A block with no product is
+skipped on the storefront, and the theme shows a note in the editor instead.</p>
+<p><strong>Can I change the fonts to my own brand font?</strong>
+Fixture uses Shopify&#39;s font picker, which covers the fonts Shopify hosts.
+Custom font files are not supported.</p>
+<p><strong>Why does my section look different on mobile?</strong>
+Most sections have separate mobile settings, usually under <strong>Mobile</strong>. Check
+there before changing the desktop values.</p>
+<p><strong>How do I hide the welcome popup?</strong>
+Open the <strong>Welcome popup</strong> section in the footer group and turn off <strong>Enable</strong>.</p>
+<p><strong>Why is my variant image not changing?</strong>
+The gallery changes when the selected variant has its own image. Upload an
+image per color on the product, then assign it to those variants.</p>
+<p><strong>Can I use the theme on more than one store?</strong>
+A theme license covers one store. Buy a separate license for each store.</p>
+<p><strong>How do I reset a section to its defaults?</strong>
+Remove the section and add it again from <strong>Add section</strong>.</p>
+<h2 id="editing-theme-code">Editing theme code</h2>
+<p>Duplicate the theme before you edit any code. Go to <strong>Online Store &gt; Themes</strong>,
+choose <strong>Actions &gt; Duplicate</strong> on Fixture, and make your changes on the copy. A
+mistake in live code can break the storefront for every visitor.</p>
+<p>Code edits are not covered by theme support, and custom coding tutorials are
+not provided. For custom work, hire a Shopify Partner from the
+<a href="https://www.shopify.com/partners/directory">Shopify Partners directory</a>.</p>
+<p>Theme updates do not merge code edits. Keep a record of the changes you make so
+you can reapply them to a newer version of the theme.</p>
+<h2 id="contact-form-limits">Contact form limits</h2>
+<p>The <strong>Contact form</strong> section uses Shopify&#39;s own <code>contact</code> form, so it inherits
+two platform limits that no theme setting can change.</p>
+<ul>
+<li><strong>No file uploads.</strong> Shopify&#39;s contact form accepts text fields only. To let
+customers attach a file, use a form app from the Shopify App Store and place
+it on the page with the <strong>Custom Liquid</strong> section.</li>
+<li><strong>No automatic reply.</strong> Shopify sends the message to the store email address
+but does not answer the customer. Set up an auto responder in your email
+provider, or use a helpdesk app, if customers should get an immediate
+acknowledgement.</li>
+</ul>
+<p>Everything else on the form, the field set, the required fields, the success
+message and the error messages, is handled by the theme.</p>
+<h2 id="support-policy">Support policy</h2>
+<p>To request help, use the support form at <a href="https://digimaps.co/en#contact">https://digimaps.co/en#contact</a>.
+Choose <strong>Get ongoing technical support</strong>, start your message with &quot;Fixture
+theme&quot; and include your store URL. Where it helps, add a link to a screenshot.</p>
+<p>The latest version of this documentation is at
+<a href="https://emremutlu08.github.io/fixture-theme-docs/">https://emremutlu08.github.io/fixture-theme-docs/</a>.</p>
+<p>Include the page address, the steps to reproduce the issue, your theme version,
+device and browser.</p>
+<p>Replies arrive within two business days.</p>
+<p>Theme defects such as a broken layout, a dead link or a logic error are fixed in
+a timely manner. Critical bugs are fixed immediately.</p>
+<p>Support covers theme settings questions and reproducible theme issues. It does
+not cover store configuration, third-party apps, customizations or custom
+development, which can be arranged separately.</p>
+</main>
+</body>
+</html>
