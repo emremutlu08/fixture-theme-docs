@@ -84,14 +84,14 @@ panel. Settings are grouped as follows.</p>
 <p><strong>Enable light and dark mode</strong> lets visitors switch between light and dark
 appearance. <strong>Default appearance</strong> sets the starting mode, with the values
 Light, Dark and Use device setting. <strong>Dark background</strong>, <strong>Dark surface</strong>,
-<strong>Dark text</strong> and <strong>Dark accent</strong> set the colors used in dark mode.</p>
+<strong>Dark surface text</strong>, <strong>Dark text</strong>, <strong>Dark accent</strong> and <strong>Dark accent text</strong> set the colors used in dark mode.</p>
 <h3>Breadcrumbs</h3>
 <p><strong>Show breadcrumbs on pages and collections</strong> turns the breadcrumb trail on for
-those pages. Product pages have their own breadcrumb setting in the
+those pages. Product pages have their own setting, <strong>Show breadcrumb navigation</strong>, in the
 <strong>Product information</strong> section.</p>
 <h3>Colors</h3>
-<p>Fixture uses six color settings: <strong>Text</strong>, <strong>Background</strong>, <strong>Secondary background</strong>,
-<strong>Accent</strong>, <strong>Highlight</strong> and <strong>Solid button label</strong>.</p>
+<p>Fixture uses eight color settings: <strong>Text</strong>, <strong>Background</strong>, <strong>Secondary background</strong>,
+<strong>Secondary background text</strong>, <strong>Accent</strong>, <strong>Accent text</strong>, <strong>Highlight</strong> and <strong>Highlight text</strong>.</p>
 <p>Every background has a matching foreground, so text stays readable when you
 change a background. Sections also offer a <strong>Color palette</strong> setting with the
 values Light, Soft, Dark, Accent and Brand colors. Choosing <strong>Brand colors</strong>
@@ -124,6 +124,10 @@ precedence.</p>
 <tr>
 <td>Custom product media color</td>
 <td>The background color used when <strong>Product media background</strong> is Custom color</td>
+</tr>
+<tr>
+<td>Custom background text</td>
+<td>The text color used on a Custom color background</td>
 </tr>
 <tr>
 <td>Product media corner radius</td>
@@ -192,11 +196,11 @@ the background and border, or the contrast color for the text.</p>
 </tr>
 </tbody></table>
 <h3>Cart recommendations</h3>
-<p><strong>Show cart recommendations</strong> turns this on. <strong>Product source</strong> chooses where
+<p><strong>Show cart recommendations</strong> turns this on. <strong>Source</strong> chooses where
 the products come from, with the values <strong>Selected products</strong>, <strong>Collection</strong>,
 <strong>Shopify complementary products</strong> and <strong>Selected + Shopify complementary</strong>.
 The rest control the <strong>Heading</strong>, the <strong>Desktop layout</strong> and <strong>Mobile layout</strong>
-(Stacked cards or Horizontal slider), the <strong>Product photo size</strong> (Compact,
+(Stacked cards or Horizontal carousel), the <strong>Product photo size</strong> (Compact,
 Balanced or Large) and the <strong>Option spacing</strong> (Compact or Comfortable).</p>
 <h3>Home page motion</h3>
 <p><strong>Motion style</strong> sets how much motion the home page uses: Off, Subtle or
@@ -210,23 +214,20 @@ reveal on for phones as well.</p>
 <p>Links for Instagram, Facebook, TikTok, YouTube and Pinterest. Leave a field
 empty to hide that icon.</p>
 <h3>Brand</h3>
-<p><strong>Favicon</strong> and a <strong>Default meta description</strong> used
+<p>Set the <strong>Favicon</strong>, and a <strong>Default meta description</strong> that the theme uses
 where a page has none.</p>
 <h3>Product recommendations</h3>
 <p><strong>Hide jersey customizer products</strong> keeps those products out of
 recommendations, which is useful when they are not meant to be bought
-directly. <strong>Excluded collection</strong> removes everything in a collection from
+directly. <strong>Collection to exclude</strong> removes everything in a collection from
 recommendations.</p>
-<p><strong>Settings density.</strong> The hero, video, countdown, header, campaign showcase and
-jersey sections expose 45 to 55 settings each by design, so the editor shows long
-lists for them. Theme Check reports four <code>ExcessiveSettingsCount</code> warnings for
-these sections. The warnings are accepted and do not block the theme.</p>
 <h2 id="header-and-footer">Header and footer</h2>
 <p>The header and footer are section groups, so you edit them in the theme editor
 like any other section and they apply to every page.</p>
-<p>The <strong>Header</strong> section covers the layout (logo left, logo centered, or a drawer
-menu), sticky behavior, the menus, the search field, the country and language
-selectors, and the account link. Use nested menus in Shopify admin under Online Store &gt; Navigation to get
+<p>The <strong>Header</strong> section covers the layout (<strong>Logo left, navigation beside</strong>,
+<strong>Logo centered, navigation below</strong>, or <strong>Centered logo, drawer navigation</strong>),
+sticky behavior, the menus, the search field, the country and currency selector,
+the language selector, and the account link. Use nested menus in Shopify admin under Online Store &gt; Navigation to get
 multi-level dropdowns.</p>
 <p>The <strong>Footer</strong> section covers menus, the newsletter, payment icons, social
 icons and the copyright line.</p>
@@ -236,18 +237,19 @@ blocks.</p>
 <strong>After delay</strong>. Choose <strong>After browsing interaction</strong> to wait for both the
 configured minimum delay and a completed click, tap, key release or mouse-wheel
 scroll outside links and controls. Form entry and purchases do not trigger it.
-Without browsing interaction, the popup stays closed. The home-page and repeat
-settings control where and how often a visitor sees it.</p>
+Without browsing interaction, the popup stays closed. The <strong>Show only on the home page</strong>
+and <strong>Show again</strong> settings control where and how often a visitor sees it.</p>
 <h2 id="home-page">Home page</h2>
 <p>Add sections from <strong>Add section</strong> in the theme editor. The ones intended for
 the home page are:</p>
 <p><strong>Hero</strong>, <strong>Media collections</strong>, <strong>Collection tabs</strong>, <strong>Campaign showcase</strong>,
-<strong>Collection cards</strong>, <strong>Collection grid</strong>, <strong>Product rail</strong>, <strong>Featured
-products</strong>, <strong>Featured product</strong>, <strong>Bundle builder</strong>, <strong>Product kit</strong>,
-<strong>Hotspots</strong>, <strong>Lifestyle showcase</strong>, <strong>Video</strong>, <strong>Image comparison</strong>,
-<strong>Countdown timer</strong>, <strong>Blog posts</strong>, <strong>Logo list</strong>, <strong>Icon benefits</strong>,
-<strong>Quote</strong>, <strong>FAQ</strong>, <strong>Email signup</strong>, <strong>Product comparison</strong> and <strong>Custom
-Liquid</strong>.</p>
+<strong>Collection cards</strong>, <strong>Product rail</strong>, <strong>Featured products</strong>, <strong>Featured
+product</strong>, <strong>Bundle builder</strong>, <strong>Product kit</strong>, <strong>Hotspots</strong>, <strong>Lifestyle
+showcase</strong>, <strong>Video</strong>, <strong>Image comparison</strong>, <strong>Blog posts</strong>, <strong>Logo list</strong>,
+<strong>Icon benefits</strong>, <strong>Quote</strong>, <strong>FAQ</strong>, <strong>Email signup</strong>, <strong>Product comparison</strong>
+and <strong>Custom Liquid</strong>.</p>
+<p>The <strong>Countdown timer</strong> section can be added to any page. It is not part of the
+demo home page.</p>
 <p>Further storytelling and layout sections: <strong>Category grid</strong>, <strong>Product set</strong>,
 <strong>Statistics</strong>, <strong>Story grid</strong>, <strong>Principles</strong>, <strong>Feature strip</strong>, <strong>Page header</strong>,
 <strong>Before and after</strong>, <strong>Campaign pair</strong>, <strong>Empty state cards</strong>, <strong>Editorial page</strong>,
@@ -269,22 +271,22 @@ description in <strong>Offer note</strong>.</p>
 <p>The <strong>Product information</strong> section is block driven. Add, remove and reorder
 these blocks:</p>
 <ul>
-<li><strong>Vendor</strong>, <strong>Product heading</strong>, <strong>SKU</strong>, <strong>Price</strong>, <strong>Variant picker</strong>, <strong>Quantity selector</strong>, <strong>Buy buttons</strong>, <strong>Product description</strong></li>
+<li><strong>Vendor</strong>, <strong>Product heading</strong>, <strong>SKU</strong>, <strong>Price</strong>, <strong>Variant picker</strong>, <strong>Quantity selector</strong>, <strong>Buy buttons</strong>, <strong>Description</strong></li>
 <li><strong>Product features</strong>, <strong>Complete the kit</strong>, <strong>Text note</strong>, <strong>Collapsible information</strong></li>
 <li><strong>Custom Liquid</strong>, and any app block</li>
 </ul>
-<p>The heading blocks (Vendor, Product title, SKU) render as one group, and the
+<p>The heading blocks (Vendor, Product heading, SKU) render as one group, and the
 purchase blocks (Variant picker, Quantity selector, Buy buttons) render as one
 group. Each group appears at the position of its first block, and the order
 inside a group is fixed. The older <strong>Product options and purchase</strong> block still
 works. When it is present, the new purchase blocks are ignored. The legacy
-Show vendor and Show SKU settings of the Product title block still work, and
+Show vendor and Show SKU settings of the Product heading block still work, and
 each line renders once even when a Vendor or SKU block is also added.</p>
-<p>Key settings: media layout and position, gallery style, whether to show
-breadcrumbs, the sticky buy bar, and a size guide page. The size guide, gift
-card recipient, pickup availability and dynamic checkout settings are on the
-Buy buttons block.</p>
-<p><strong>Complete the kit</strong> has a <strong>Product source</strong> setting. <strong>Shopify
+<p>Key settings: gallery position, desktop and mobile gallery layout, whether to
+show breadcrumb navigation, the compact sticky cart bar, and a size guide page.
+The size guide page, gift card recipient form, local pickup availability and
+accelerated checkout settings are on the Buy buttons block.</p>
+<p><strong>Complete the kit</strong> has a <strong>Source</strong> setting. <strong>Shopify
 complementary products</strong> uses Shopify&#39;s own recommendations, <strong>Collection</strong>
 draws from a collection you pick, <strong>Selected products</strong> uses a list you
 choose, and <strong>Selected + Shopify complementary</strong> combines the two.</p>
@@ -387,7 +389,7 @@ Open the <strong>Welcome popup</strong> section in the footer group and turn off
 The gallery changes when the selected variant has its own image. Upload an
 image per color on the product, then assign it to those variants.</p>
 <p><strong>Can I use the theme on more than one store?</strong>
-A theme license covers one store. Buy a separate license for each store.</p>
+Each store needs its own theme purchase from the Shopify Theme Store.</p>
 <p><strong>How do I reset a section to its defaults?</strong>
 Remove the section and add it again from <strong>Add section</strong>.</p>
 <h2 id="editing-theme-code">Editing theme code</h2>
