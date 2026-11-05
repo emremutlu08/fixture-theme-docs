@@ -20,7 +20,8 @@ li{margin:4px 0}
 </head>
 <body>
 <main>
-<header class="doc-head"><h1>Fixture theme documentation</h1><p>Shopify theme by Emre Mutlu, Digimaps Core. Support: <a href="https://digimaps.co/en#contact">digimaps.co/en#contact</a></p></header>
+<header class="doc-head"><h1>Fixture theme documentation</h1><p>Shopify theme by Emre Mutlu, Digimaps Core. Support: <a href="support.html">Fixture theme support form</a></p></header>
+
 <p>Fixture is a Shopify theme for sports and teamwear stores. It covers the usual
 storefront, and adds a jersey customizer for stores that sell personalized kit.</p>
 <p>This document uses the same wording as the theme editor, so a heading here
@@ -203,7 +204,7 @@ Expressive. The default is Subtle. <strong>Reveal sections on scroll</strong> re
 section as a visitor scrolls to it. <strong>Use reveal motion on mobile</strong> turns that
 reveal on for phones as well.</p>
 <h3>Search</h3>
-<p><strong>Enable search suggestions</strong> shows suggestions as a customer types.
+<p><strong>Show search suggestions</strong> shows suggestions as a customer types.
 <strong>Show price in suggestions</strong> adds a price to each suggestion.</p>
 <h3>Social media</h3>
 <p>Links for Instagram, Facebook, TikTok, YouTube and Pinterest. Leave a field
@@ -255,22 +256,20 @@ and <strong>Product details</strong>.</p>
 <p>Each of these also works on a page template, so you can build landing pages
 from the same parts.</p>
 <h3>Bundle builder</h3>
-<p>The <strong>Bundle builder</strong> section sells a set of products for one discounted total.
-Set up the discount in Shopify first:</p>
+<p>The <strong>Bundle builder</strong> section lets shoppers choose products and adds them to the
+bag in one step. The section applies no discount itself.</p>
+<p>To offer a bundle price, create an automatic discount in Shopify admin:</p>
 <ol>
-<li>In Shopify admin, go to <strong>Discounts</strong> and create a percentage discount code for
-the eligible products. Set the minimum quantity to the number in
-<strong>Products to choose</strong>.</li>
-<li>In the section settings, enter the same code in <strong>Shopify discount code</strong>.</li>
-<li>Match <strong>Products to choose</strong> and <strong>Displayed discount</strong> to that Shopify discount.</li>
+<li>Go to <strong>Discounts</strong> and create an automatic discount for the eligible products.</li>
+<li>Set the minimum quantity to the number in <strong>Products to choose</strong>.</li>
 </ol>
-<p>Leave <strong>Shopify discount code</strong> empty to sell the selection without a discount.
-The section then shows no saving.</p>
+<p>Shopify applies the discount in the bag and at checkout. Optionally, type a short
+description in <strong>Offer note</strong>.</p>
 <h2 id="product-pages">Product pages</h2>
 <p>The <strong>Product information</strong> section is block driven. Add, remove and reorder
 these blocks:</p>
 <ul>
-<li><strong>Vendor</strong>, <strong>Product title</strong>, <strong>SKU</strong>, <strong>Price</strong>, <strong>Variant picker</strong>, <strong>Quantity selector</strong>, <strong>Buy buttons</strong>, <strong>Product description</strong></li>
+<li><strong>Vendor</strong>, <strong>Product heading</strong>, <strong>SKU</strong>, <strong>Price</strong>, <strong>Variant picker</strong>, <strong>Quantity selector</strong>, <strong>Buy buttons</strong>, <strong>Product description</strong></li>
 <li><strong>Product features</strong>, <strong>Complete the kit</strong>, <strong>Text note</strong>, <strong>Collapsible information</strong></li>
 <li><strong>Custom Liquid</strong>, and any app block</li>
 </ul>
@@ -383,7 +382,7 @@ Custom font files are not supported.</p>
 Most sections have separate mobile settings, usually under <strong>Mobile</strong>. Check
 there before changing the desktop values.</p>
 <p><strong>How do I hide the welcome popup?</strong>
-Open the <strong>Welcome popup</strong> section in the footer group and turn off <strong>Enable</strong>.</p>
+Open the <strong>Welcome popup</strong> section in the footer group and turn off <strong>Show popup</strong>.</p>
 <p><strong>Why is my variant image not changing?</strong>
 The gallery changes when the selected variant has its own image. Upload an
 image per color on the product, then assign it to those variants.</p>
@@ -397,7 +396,7 @@ choose <strong>Actions &gt; Duplicate</strong> on Fixture, and make your changes
 mistake in live code can break the storefront for every visitor.</p>
 <p>Code edits are not covered by theme support, and custom coding tutorials are
 not provided. For custom work, hire a Shopify Partner from the
-<a href="https://www.shopify.com/partners/directory">Shopify Partners directory</a>.</p>
+<a href="https://www.shopify.com/partners/directory" rel="nofollow">Shopify Partners directory</a>.</p>
 <p>Theme updates do not merge code edits. Keep a record of the changes you make so
 you can reapply them to a newer version of the theme.</p>
 <h2 id="contact-form-limits">Contact form limits</h2>
@@ -415,11 +414,10 @@ acknowledgement.</li>
 <p>Everything else on the form, the field set, the required fields, the success
 message and the error messages, is handled by the theme.</p>
 <h2 id="support-policy">Support policy</h2>
-<p>To request help, use the support form at <a href="https://digimaps.co/en#contact">https://digimaps.co/en#contact</a>.
-Choose <strong>Get ongoing technical support</strong>, start your message with &quot;Fixture
-theme&quot; and include your store URL. Where it helps, add a link to a screenshot.</p>
-<p>The latest version of this documentation is at
-<a href="https://emremutlu08.github.io/fixture-theme-docs/">https://emremutlu08.github.io/fixture-theme-docs/</a>.</p>
+<p>To request help, use the support form at
+<a href="https://emremutlu08.github.io/fixture-theme-docs/support.html">https://emremutlu08.github.io/fixture-theme-docs/support.html</a>. It asks for your
+name, email, store URL, a subject and a description of the problem. Where it
+helps, add a link to a screenshot.</p>
 <p>Include the page address, the steps to reproduce the issue, your theme version,
 device and browser.</p>
 <p>Replies arrive within two business days.</p>
