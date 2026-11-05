@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fixture theme support</title>
+<meta name="description" content="Contact form for Fixture Shopify theme support. Replies within two business days.">
+<style>
+:root{color-scheme:light dark;--text:#171918;--muted:#5b5f5c;--bg:#f8f8f5;--line:#8a8d89;--link:#1f6f69;--btn:#171918;--btn-text:#fff}
+@media (prefers-color-scheme:dark){:root{--text:#ecedea;--muted:#a9ada9;--bg:#151716;--line:#7b807c;--link:#6fc2ba;--btn:#ecedea;--btn-text:#151716}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+main{max-width:640px;margin:0 auto;padding:48px 20px 80px}
+h1{font-size:2rem;line-height:1.2;margin:0 0 8px}p.lead{color:var(--muted);margin:0 0 28px}
+a{color:var(--link)}
+label{display:block;font-weight:600;margin:18px 0 6px}
+.hint{display:block;font-weight:400;color:var(--muted);font-size:.9rem}
+input,textarea{width:100%;font:inherit;color:var(--text);background:transparent;border:1px solid var(--line);border-radius:6px;padding:12px;min-height:44px}
+textarea{min-height:160px;resize:vertical}
+input:focus-visible,textarea:focus-visible,button:focus-visible{outline:3px solid var(--link);outline-offset:2px}
+button{margin-top:24px;min-height:48px;padding:0 24px;font:600 1rem/1 inherit;font-family:inherit;border:0;border-radius:6px;background:var(--btn);color:var(--btn-text);cursor:pointer}
+.note{margin-top:28px;color:var(--muted);font-size:.95rem}
+</style>
+</head>
+<body>
+<main>
+<h1>Fixture theme support</h1>
+<p class="lead">Questions about the Fixture theme, or something not working on your store? Send the form below. Replies arrive within two business days.</p>
+<form method="post" action="https://digimaps.co/en/contact#contact_form" accept-charset="UTF-8">
+  <input type="hidden" name="form_type" value="contact">
+  <input type="hidden" name="utf8" value="&#10003;">
+  <input type="hidden" name="contact[Theme]" value="Fixture">
+  <input type="hidden" name="contact[Hizmet]" value="Fixture theme support">
+
+  <label for="support-name">Name</label>
+  <input id="support-name" name="contact[name]" type="text" autocomplete="name" required>
+
+  <label for="support-email">Email</label>
+  <input id="support-email" name="contact[email]" type="email" autocomplete="email" required>
+
+  <label for="support-store">Store URL <span class="hint">For example, https://storename.myshopify.com</span></label>
+  <input id="support-store" name="contact[Store URL]" type="url" placeholder="https://storename.myshopify.com" required>
+
+  <label for="support-subject">Subject</label>
+  <input id="support-subject" name="contact[Subject]" type="text" required>
+
+  <label for="support-body">Description of the problem <span class="hint">Include the page address, the steps to reproduce the issue, your theme version, device and browser.</span></label>
+  <textarea id="support-body" name="contact[body]" required></textarea>
+
+  <label for="support-screenshot">Screenshot link (optional) <span class="hint">A shareable link with personal and payment details hidden. Never send passwords or access codes.</span></label>
+  <input id="support-screenshot" name="contact[Screenshot link]" type="url" placeholder="https://">
+
+  <button type="submit">Send message</button>
+</form>
+<p class="note">Documentation: <a href="./">Fixture theme documentation</a>. Support covers theme settings questions and reproducible theme issues.</p>
+</main>
+</body>
+</html>
