@@ -4,24 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fixture theme documentation</title>
-<meta name="description" content="Documentation for the Fixture Shopify theme: setup, theme settings, sections, product pages, cart, customer accounts, FAQ and support policy.">
-<style>
-:root{color-scheme:light dark;--text:#171918;--muted:#5b5f5c;--bg:#f8f8f5;--line:#d9dad5;--link:#1f6f69}
-@media (prefers-color-scheme:dark){:root{--text:#ecedea;--muted:#a9ada9;--bg:#151716;--line:#2f3330;--link:#6fc2ba}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
-main{max-width:860px;margin:0 auto;padding:48px 20px 80px}
-header.doc-head{border-bottom:1px solid var(--line);margin-bottom:32px;padding-bottom:16px}
-header.doc-head p{color:var(--muted);margin:4px 0 0}
-h1{font-size:2.2rem;line-height:1.15;margin:0}h2{font-size:1.5rem;margin-top:48px;padding-top:8px;border-top:1px solid var(--line)}h3{font-size:1.15rem;margin-top:28px}
-a{color:var(--link)}code{font-size:.9em;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
-table{border-collapse:collapse;width:100%;margin:16px 0;font-size:.95rem;display:block;overflow-x:auto}th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}th{background:rgba(127,127,127,.08)}
-li{margin:4px 0}
-</style>
 </head>
 <body>
 <main>
-<header class="doc-head"><h1>Fixture theme documentation</h1><p>Shopify theme by Emre Mutlu, Digimaps Core. Support: <a href="support.html">Fixture theme support form</a></p></header>
-
 <p>Fixture is a Shopify theme for sports and teamwear stores. It covers the usual
 storefront, and adds a jersey customizer for stores that sell personalized kit.</p>
 <p>This document uses the same wording as the theme editor, so a heading here
@@ -80,15 +65,12 @@ panel. Settings are grouped as follows.</p>
 <td>Space between grid rows</td>
 </tr>
 </tbody></table>
-<h3>Color mode</h3>
-<p><strong>Enable light and dark mode</strong> lets visitors switch between light and dark
-appearance. <strong>Default appearance</strong> sets the starting mode, with the values
-Light, Dark and Use device setting. <strong>Dark background</strong>, <strong>Dark surface</strong>,
-<strong>Dark surface text</strong>, <strong>Dark text</strong>, <strong>Dark accent</strong> and <strong>Dark accent text</strong> set the colors used in dark mode.</p>
-<h3>Breadcrumbs</h3>
-<p><strong>Show breadcrumbs on pages and collections</strong> turns the breadcrumb trail on for
+<p><strong>Show breadcrumbs on pages and collections</strong>, under the <strong>Breadcrumbs</strong> heading in this group, turns the breadcrumb trail on for
 those pages. Product pages have their own setting, <strong>Show breadcrumb navigation</strong>, in the
 <strong>Product information</strong> section.</p>
+<h3>Brand</h3>
+<p>Set the <strong>Favicon</strong>, and a <strong>Default meta description</strong> that the theme uses
+where a page has none.</p>
 <h3>Colors</h3>
 <p>Fixture uses eight color settings: <strong>Text</strong>, <strong>Background</strong>, <strong>Secondary background</strong>,
 <strong>Secondary background text</strong>, <strong>Accent</strong>, <strong>Accent text</strong>, <strong>Highlight</strong> and <strong>Highlight text</strong>.</p>
@@ -96,6 +78,11 @@ those pages. Product pages have their own setting, <strong>Show breadcrumb navig
 change a background. Sections also offer a <strong>Color palette</strong> setting with the
 values Light, Soft, Dark, Accent and Brand colors. Choosing <strong>Brand colors</strong>
 makes a section use the background and text you set here.</p>
+<h3>Color mode</h3>
+<p><strong>Enable light and dark mode</strong> lets visitors switch between light and dark
+appearance. <strong>Default appearance</strong> sets the starting mode, with the values
+Light, Dark and Use device setting. <strong>Dark background</strong>, <strong>Dark surface</strong>,
+<strong>Dark surface text</strong>, <strong>Dark text</strong>, <strong>Dark accent</strong> and <strong>Dark accent text</strong> set the colors used in dark mode.</p>
 <h3>Typography</h3>
 <p><strong>Heading font</strong> and <strong>Body font</strong> each take a Shopify font. <strong>Heading size</strong>
 and <strong>Body size</strong> set the type without you editing each section.
@@ -109,6 +96,14 @@ fonts you pick.</p>
 each component, plus <strong>Button border thickness</strong>. Set these once and every
 section follows. Product and section settings with their own radius keep
 precedence.</p>
+<h3>Product cards</h3>
+<p><strong>Show the &quot;New&quot; badge</strong>, <strong>Show the &quot;Popular&quot; badge</strong> and <strong>Show the &quot;Best seller&quot; badge</strong>
+appear on products tagged new, popular and best-seller. <strong>Show sale badges</strong>
+controls sale badges on every product card. <strong>Sale badge format</strong>
+(Percentage, Amount or Sale label) and <strong>Sale badge indicator</strong> (Icon or Text)
+set how a sale badge reads. <strong>Sale badge background</strong>, <strong>Sale badge text</strong> and
+<strong>Sale badge border</strong> set its colors. Leave a color empty to use Highlight for
+the background and border, or the contrast color for the text.</p>
 <h3>Product media and cards</h3>
 <table>
 <thead>
@@ -154,14 +149,11 @@ precedence.</p>
 <td>Shows the quick view button as Icon or as Icon and text</td>
 </tr>
 </tbody></table>
-<h3>Product cards</h3>
-<p><strong>Show the &quot;New&quot; badge</strong>, <strong>Show the &quot;Popular&quot; badge</strong> and <strong>Show the &quot;Best seller&quot; badge</strong>
-appear on products tagged new, popular and best-seller. <strong>Show sale badges</strong>
-controls sale badges on every product card. <strong>Sale badge format</strong>
-(Percentage, Amount or Sale label) and <strong>Sale badge indicator</strong> (Icon or Text)
-set how a sale badge reads. <strong>Sale badge background</strong>, <strong>Sale badge text</strong> and
-<strong>Sale badge border</strong> set its colors. Leave a color empty to use Highlight for
-the background and border, or the contrast color for the text.</p>
+<h3>Product recommendations</h3>
+<p><strong>Hide jersey customizer products</strong> keeps those products out of
+recommendations, which is useful when they are not meant to be bought
+directly. <strong>Collection to exclude</strong> removes everything in a collection from
+recommendations.</p>
 <h3>Cart</h3>
 <table>
 <thead>
@@ -202,25 +194,17 @@ the products come from, with the values <strong>Selected products</strong>, <str
 The rest control the <strong>Heading</strong>, the <strong>Desktop layout</strong> and <strong>Mobile layout</strong>
 (Stacked cards or Horizontal carousel), the <strong>Product photo size</strong> (Compact,
 Balanced or Large) and the <strong>Option spacing</strong> (Compact or Comfortable).</p>
+<h3>Search</h3>
+<p><strong>Show search suggestions</strong> shows suggestions as a customer types.
+<strong>Show price in suggestions</strong> adds a price to each suggestion.</p>
 <h3>Home page motion</h3>
 <p><strong>Motion style</strong> sets how much motion the home page uses: Off, Subtle or
 Expressive. The default is Subtle. <strong>Reveal sections on scroll</strong> reveals each
 section as a visitor scrolls to it. <strong>Use reveal motion on mobile</strong> turns that
 reveal on for phones as well.</p>
-<h3>Search</h3>
-<p><strong>Show search suggestions</strong> shows suggestions as a customer types.
-<strong>Show price in suggestions</strong> adds a price to each suggestion.</p>
 <h3>Social media</h3>
-<p>Links for Instagram, Facebook, TikTok, YouTube and Pinterest. Leave a field
+<p>Links for Instagram, Facebook, TikTok, X, YouTube and Pinterest. Leave a field
 empty to hide that icon.</p>
-<h3>Brand</h3>
-<p>Set the <strong>Favicon</strong>, and a <strong>Default meta description</strong> that the theme uses
-where a page has none.</p>
-<h3>Product recommendations</h3>
-<p><strong>Hide jersey customizer products</strong> keeps those products out of
-recommendations, which is useful when they are not meant to be bought
-directly. <strong>Collection to exclude</strong> removes everything in a collection from
-recommendations.</p>
 <h2 id="header-and-footer">Header and footer</h2>
 <p>The header and footer are section groups, so you edit them in the theme editor
 like any other section and they apply to every page.</p>
@@ -233,17 +217,18 @@ multi-level dropdowns.</p>
 icons and the copyright line.</p>
 <p>The <strong>Announcement bar</strong> sits above the header and takes multiple messages as
 blocks.</p>
-<p>The <strong>Welcome popup</strong> lives in the footer group. <strong>Open trigger</strong> defaults to
-<strong>After delay</strong>. Choose <strong>After browsing interaction</strong> to wait for both the
-configured minimum delay and a completed click, tap, key release or mouse-wheel
-scroll outside links and controls. Form entry and purchases do not trigger it.
+<p>The <strong>Welcome popup</strong> lives in the footer group and is off when the theme is installed; turn on <strong>Show on the online store</strong> to use it. The shipped footer group sets <strong>Open trigger</strong> to
+<strong>After browsing interaction</strong>, which waits for both the configured minimum
+delay and a completed click, tap, key release or mouse-wheel scroll outside
+links and controls. The section schema default for a newly added popup is
+<strong>After delay</strong>. Form entry and purchases do not trigger it.
 Without browsing interaction, the popup stays closed. The <strong>Show only on the home page</strong>
 and <strong>Show again</strong> settings control where and how often a visitor sees it.</p>
 <h2 id="home-page">Home page</h2>
 <p>Add sections from <strong>Add section</strong> in the theme editor. The ones intended for
 the home page are:</p>
 <p><strong>Hero</strong>, <strong>Media collections</strong>, <strong>Collection tabs</strong>, <strong>Campaign showcase</strong>,
-<strong>Collection cards</strong>, <strong>Product rail</strong>, <strong>Featured products</strong>, <strong>Featured
+<strong>Collection cards</strong>, <strong>Product carousel</strong>, <strong>Featured products</strong>, <strong>Featured
 product</strong>, <strong>Bundle builder</strong>, <strong>Product kit</strong>, <strong>Hotspots</strong>, <strong>Lifestyle
 showcase</strong>, <strong>Video</strong>, <strong>Image comparison</strong>, <strong>Blog posts</strong>, <strong>Logo list</strong>,
 <strong>Icon benefits</strong>, <strong>Quote</strong>, <strong>FAQ</strong>, <strong>Email signup</strong>, <strong>Product comparison</strong>
@@ -252,8 +237,7 @@ and <strong>Custom Liquid</strong>.</p>
 demo home page.</p>
 <p>Further storytelling and layout sections: <strong>Category grid</strong>, <strong>Product set</strong>,
 <strong>Statistics</strong>, <strong>Story grid</strong>, <strong>Principles</strong>, <strong>Feature strip</strong>, <strong>Page header</strong>,
-<strong>Before and after</strong>, <strong>Campaign pair</strong>, <strong>Empty state cards</strong>, <strong>Editorial page</strong>,
-<strong>Editorial article</strong>, <strong>Article listing</strong>, <strong>Contact details</strong>, <strong>Collection list</strong>
+<strong>Before and after</strong>, <strong>Campaign pair</strong>, <strong>Empty state cards</strong>, <strong>Collection list</strong>
 and <strong>Product details</strong>.</p>
 <p>Each of these also works on a page template, so you can build landing pages
 from the same parts.</p>
@@ -384,7 +368,7 @@ Custom font files are not supported.</p>
 Most sections have separate mobile settings, usually under <strong>Mobile</strong>. Check
 there before changing the desktop values.</p>
 <p><strong>How do I hide the welcome popup?</strong>
-Open the <strong>Welcome popup</strong> section in the footer group and turn off <strong>Show popup</strong>.</p>
+The popup is off when the theme is installed. To turn it on or off, open the <strong>Welcome popup</strong> section in the footer group and use <strong>Show on the online store</strong>.</p>
 <p><strong>Why is my variant image not changing?</strong>
 The gallery changes when the selected variant has its own image. Upload an
 image per color on the product, then assign it to those variants.</p>
@@ -429,6 +413,7 @@ a timely manner. Critical bugs are fixed immediately.</p>
 <p>Support covers theme settings questions and reproducible theme issues. It does
 not cover store configuration, third-party apps, customizations or custom
 development, which can be arranged separately.</p>
+<p>Documentation last reviewed against Shopify platform changes: 2026-11-06. Next review: January 2027.</p>
 </main>
 </body>
 </html>
